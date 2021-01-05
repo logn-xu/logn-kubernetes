@@ -1,0 +1,45 @@
+{
+    "run_type": "client",
+    "local_addr": "0.0.0.0",
+    "local_port": 1080,
+    "remote_addr": "trojan.logn.club",
+    "remote_port": 443,
+    "password": [
+        "logn"
+    ],
+    "log_level": 1,
+    "ssl": {
+        "prefer_server_cipher": false,
+        "alpn": [
+            "http/1.1"
+        ],
+        "alpn_port_override": {
+            "h2": 81
+        },
+        "reuse_session": true,
+        "session_ticket": false,
+        "session_timeout": 600,
+        "plain_http_response": "",
+        "curves": "",
+        "dhparam": ""
+    },
+    "tcp": {
+        "prefer_ipv4": false,
+        "no_delay": true,
+        "keep_alive": true,
+        "reuse_port": false,
+        "fast_open": false,
+        "fast_open_qlen": 20
+    },
+    "mysql": {
+        "enabled": false,
+        "server_addr": "127.0.0.1",
+        "server_port": 3306,
+        "database": "trojan",
+        "username": "trojan",
+        "password": "",
+        "key": "",
+        "cert": "",
+        "ca": ""
+    }
+}
